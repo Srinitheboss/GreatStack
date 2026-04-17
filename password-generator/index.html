@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Password Generator</title>
+
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>Generate a <br><span>Random Password</span></h1>
+<div class="display">
+<input type="text" id="password" placeholder="Password" />
+<img src="rpg_img/images/copy.png" onclick="copyPassword()">
+</div>
+<button onclick="createPassword()"><img src="rpg_img/images/generate.png">Generate Password</button>
+</div>
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+</html>
