@@ -8,15 +8,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Page title -->
-    <title>Document</title>
+    <title>Music-Player</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/9feb5301ca.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <div class="container">
+<div class="music-player">
+<nav>
+<div class="circle">
+<i class="fa-solid fa-angle-left"></i>
+</div>
+<div class="circle">
+<i class="fa-solid fa-bars"></i>
+</div>
+</nav>
+<img src="468-thumbnail.png" class="song-img">
+<h1>Despacito</h1>
+<p>Luis Fonsi Ft. Puerto Rican</p>
 
+<audio id="song">
+<source src="Appearing Nowhere (feat. Rusty James Miller) - Zenith Bikini.mp3" type="audio/mpeg">
+</audio>
+
+<input type="range" value="0" id="progress">
+
+<div class="controls">
+<div>
+<i class="fa-solid fa-backward"></i>
+</div>
+<div onclick="playPause()">
+<i class="fa-solid fa-play" id="ctrlIcon"></i>
+</div>
+<div>
+<i class="fa-solid fa-forward"></i>
+</div>
+</div>
+
+</div>
 </div>
     <!-- External JS -->
     <script src="script.js"></script>
